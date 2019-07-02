@@ -1,0 +1,153 @@
+@import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+$site-width: 1024px;
+
+.full-width {
+	width: $site-width;
+	margin: 0 auto;
+}
+
+header {
+	.top {
+		padding: 5px;
+	}
+
+	.top {
+		background-color: $color__gg_pink;
+		color: white;
+		text-align: right;
+	}
+
+	.middle {
+		position: relative;
+		padding: 20px;
+	}
+
+	.bottom {
+		background-color: $color__gg_blue;
+	}
+
+	.nav-container {
+		@include clearfix;
+	}
+
+	#site-navigation {
+	}
+
+	.guiding-logo {
+		float: left;
+		margin-right: 50px;
+	}
+
+	h1.site-title {
+		clear: none;
+		font-size: 500%;
+		margin: 0;
+		float: left;
+		a {
+			color: $color__gg_pink;
+			text-decoration: none;
+		}
+	}
+
+	.title-and-logo {
+		width: 80%;
+	}
+
+	.social-media {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+		height: 50px;
+	}
+
+	.facebook {
+		float: right;
+	}
+
+	.facebook {
+		padding-right: 10px;
+	}
+
+	.fa-facebook-square {
+		font-size: 50px;
+		color: #3b5998;
+		&:hover {
+			color: $color__gg_pink
+		}
+	}
+
+}
+
+#content {		
+	width: $site-width;
+	margin: 0 auto;
+}
+
+#main {
+	padding: 20px;
+}
+
+#secondary {
+	padding: 20px;
+}
+
+// this is the whole site footer
+#colophon {
+	padding: 15px 5px;
+	color: white;
+	background-color: $color__gg_blue;
+
+	.copyright {
+		float: left;
+	}
+	.privacy-policy {
+		float: right;
+		a {
+			color: white;
+		
+			&:hover,
+			&:focus,
+			&:active {
+				color: $color__link-hover;
+			}
+
+		}
+	}
+}
+
+//
+//  TEST SERVER WARNING
+//
+
+#test-server-warning {
+	background-image: url(img/stripe.png);
+	background-color: yellow;
+	padding: 10px;
+
+	div {
+		background-color: rgba(255, 255, 255, 0.85);
+		padding: 10px;
+
+		width: $site-width;
+		margin: 0 auto;
+
+	}
+	p {
+		margin: 0;
+	}
+	p.warning {
+		font-weight: bold;
+		font-size: 150%;
+	}
+}
