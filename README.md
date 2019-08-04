@@ -28,7 +28,7 @@ Wordpress stuff. Here's how to get it up and running:
    / Themes and making sure it's selected. If you've had to reinstall this all
    for some reason you may need to clone the theme again from this repo.
 6. If you update the CSS you have to do it by updating the SASS and running
-   something like `sass sass/style.scss style.css`.
+   something like `sass --watch sass/style.scss:style.css`.
 7. Probably sensible to increment the version number in `sass/style.scss` so you can keep
    track of which is the latest version. Make sure you run `sass watch` so it
    updates the CSS. Might be a good idea to put the version number in the theme
