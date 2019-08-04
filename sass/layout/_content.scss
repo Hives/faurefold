@@ -1,0 +1,15 @@
+.content-area.no-sidebar {
+	float: left;
+	margin: 0 0 0 0;
+	width: $size__site-main;
+
+	.site-main {
+		margin: 0 0 0 0;
+	}
+}
+
+
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}
